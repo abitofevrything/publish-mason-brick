@@ -6,4 +6,4 @@ RUN dart pub get
 COPY . .
 RUN dart pub get --offline
 
-CMD [ 'dart', 'run', 'main.dart' ]
+CMD [ "dart", "run", "main.dart" ]
