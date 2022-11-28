@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run test
-        uses: abitofevrything/publish-mason-brick@master
+        uses: abitofevrything/publish-mason-brick@main
         with:
           path: test_brick
           dryRun: true
