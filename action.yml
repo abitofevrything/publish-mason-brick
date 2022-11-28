@@ -1,0 +1,36 @@
+name: publish-mason-brick
+description: Publishes mason bricks to https://brickhub.dev
+author: Abitofevrything
+
+inputs:
+  path:
+    description: The path of the brick relative to the repositories root
+    required: false
+    default: '.'
+
+  email:
+    description: The email address to use to login to brickhub.dev
+    required: true
+
+  password:
+    description: The password to use to login to brickhub.dev
+    required: true
+
+  dryRun:
+    description: Whether a dry run should be done. No bricks will be uploaded if this is set to true.
+    required: false
+    default: 'false'
+
+outputs:
+  name:
+    description: The name of the brick being published
+
+  version:
+    description: The current version of the brick
+
+  oldVersion:
+    description: The version of the brick on brickhub.dev before this script was run
+
+runs:
+  using: docker
+  image: Dockerfile

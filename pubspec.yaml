@@ -1,0 +1,14 @@
+name: publish_mason_brick
+publish_to: none
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  actions_toolkit_dart: ^0.5.1
+  checked_yaml: ^2.0.1
+  collection: ^1.17.0
+  mason: ^0.1.0-dev.39
+  mason_api: ^0.1.0-dev.8
+  path: ^1.8.2
+  pub_semver: ^2.1.3
