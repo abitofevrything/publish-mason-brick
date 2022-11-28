@@ -34,3 +34,7 @@ outputs:
 runs:
   using: docker
   image: Dockerfile
+
+branding:
+  icon: upload
+  color: orange
