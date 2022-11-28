@@ -1,0 +1,10 @@
+# Intentionally shadow the `hello` brick so we find a matching brick on brickhub.dev
+name: hello
+description: A brick for testing only.
+
+# Set the version to 0.0.0 so we don't ever accidentally try to upload
+version: 0.0.0
+
+environment:
+  mason: ">=0.1.0-dev.39 <0.1.0"
+
