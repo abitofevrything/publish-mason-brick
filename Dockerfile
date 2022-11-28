@@ -1,9 +1,9 @@
 FROM dart:stable
 
-COPY pubspec.* ./
+COPY pubspec.* /
 RUN dart pub get
 
-COPY . .
+COPY . /
 RUN dart pub get --offline
 
-CMD [ "dart", "run", "main.dart" ]
+CMD [ "dart", "run", "/main.dart" ]
