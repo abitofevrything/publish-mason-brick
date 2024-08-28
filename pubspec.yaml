@@ -2,7 +2,7 @@ name: publish_mason_brick
 publish_to: none
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: ^3.0.0
 
 dependencies:
   actions_toolkit_dart:
